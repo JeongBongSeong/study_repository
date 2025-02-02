@@ -4,8 +4,6 @@ namespace JBS
 {
     public class Opponent : Character
     {
-        public string name;
-
         public void takeDamage(int damage)
         {
             health += damage;

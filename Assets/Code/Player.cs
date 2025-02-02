@@ -11,6 +11,7 @@ namespace JBS
         void Start()
         {
             missileManager = new PlayerMissileManager();
+            speed = 0.01f;
         }
 
         public void Update()

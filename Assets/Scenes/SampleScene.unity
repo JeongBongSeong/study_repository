@@ -353,7 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b91b6b5e14a479478a0c7c7889a6f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 0}
   character: {fileID: 0}
 --- !u!1 &1243781498
 GameObject:
@@ -368,7 +367,7 @@ GameObject:
   - component: {fileID: 1243781501}
   - component: {fileID: 1243781502}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Opponent
   m_TagString: BulletTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,12 +381,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243781498}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 0.99531734, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2069624706}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1243781500
 SpriteRenderer:
@@ -529,7 +528,7 @@ GameObject:
   - component: {fileID: 1655002156}
   - component: {fileID: 1655002155}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,12 +542,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655002153}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5, y: 0.99531734, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2069624706}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1655002155
 MonoBehaviour:
@@ -562,7 +561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b7a3e53fab4b6eba23e69381093875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: player
   health: 0
   Bullet_A: {fileID: 6677641161419088831, guid: a2db7da7ebee0d0488420548fe2209be, type: 3}
   speed: 0.4
@@ -651,7 +649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b91b6b5e14a479478a0c7c7889a6f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 0}
   character: {fileID: 0}
 --- !u!4 &2069624706
 Transform:
@@ -665,9 +662,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.99531734, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1655002154}
-  - {fileID: 1243781499}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -676,4 +671,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 1655002154}
+  - {fileID: 1243781499}
   - {fileID: 2069624706}

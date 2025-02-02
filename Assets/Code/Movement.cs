@@ -3,18 +3,15 @@ using UnityEngine;
 
 namespace JBS
 {
-    public class Movement : MonoBehaviour
+    public class Movement
     {
-        public float speed;
-
-        public void Init(float speed)
+        public void Init()
         {
-            speed = speed;
         }
 
         public void Move(Character character)
         {
-            character.transform.Translate(Input.GetAxis("Horizontal") * speed, 0, 0);
+            character.transform.Translate(Input.GetAxis("Horizontal") * character.speed, 0, 0);
         }
     }
 }
